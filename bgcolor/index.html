@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>Web Storage demo</title>
+  <style>
+    .colorpicker {
+      display: inline-block;
+      margin: 20px;
+      padding: 20px;
+      border: solid 1px #999;
+      background: #FFF;
+      font-size: 16px;
+    }
+
+    .colorpicker > label + label {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body style="background-color: red">
+  <h1>Web Storage デモ</h1>
+
+  <div class="colorpicker">
+    <label>
+      <input type="radio" name="bgColor" value="red" checked />
+      <span>赤</span>
+    </label>
+    <label>
+      <input type="radio" name="bgColor" value="blue" />
+      <span>青</span>
+    </label>
+  </div>
+
+  <p>色を選択すると背景色が変わります。</p>
+  <p>ウィンドウを閉じても記憶します。</p>
+  <p>他のウィンドウで変更しても同期します。</p>
+
+  <script src='./index.js'></script>
+</body>
+</html>
